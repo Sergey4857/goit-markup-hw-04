@@ -174,10 +174,19 @@ margin-left: 40px;
 }
 
 .hero {
+  
   background-color: var(--header-color);
+   display: block;
   text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
+   min-width: 1440px; 
+   height: 600px;
+
+
+   background-image: url(./images/hero-background.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 .hero-position{
