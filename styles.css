@@ -1,0 +1,434 @@
+:root {
+  --header-color: #2e2f42;
+  --main-text-color: #434455;
+  --main-background-color: #ffffff;
+  --secondary-background-color: #f4f4fd;
+  --hover-focus-color: #4d5ae5;
+  --third-background-color: #e5e5e5;
+}
+
+html {
+	box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+body {
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+ul {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+margin: 0;
+}
+
+a{
+text-decoration: none;
+color:inherit
+}
+
+img{
+ display: block;
+ min-width: 100%;
+ height: auto;
+}
+address{
+font-style: normal;
+}
+
+
+.container {
+  width: 1158px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+
+}
+.section {
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+
+.header-content {
+  display: flex;
+
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.privilage-list{
+display: flex;
+flex-basis: calc((100%-72)/4);
+
+}
+
+.header{
+
+border-bottom: 1px solid #E7E9FC; 
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  margin-right: auto;
+}
+
+
+
+.logo-link {
+  color: var(--header-color);
+
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo-color {
+  color: var(--hover-focus-color);
+
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+  margin-left: 76px;
+}
+
+
+
+.nav-list a {
+  color: var(--header-color);
+
+  font-weight: 600;
+  line-height: 1.5;
+}
+.nav-list a:hover,
+.nav-list a:focus {
+  color: var(--hover-focus-color);
+}
+
+.contact-list {
+  display: flex;
+  /* margin-left: auto; */
+
+ 
+}
+.contact-item + .contact-item{
+  
+margin-left: 40px;
+}
+
+
+.contact-list a {
+  color: var(--main-text-color);
+  font-style: normal;
+}
+
+.contact-list a:hover,
+.contact-list a:focus {
+  color: var(--hover-focus-color);
+}
+
+.hero {
+  background-color: var(--header-color);
+  text-align: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
+.hero-position{
+
+
+
+}
+.hero-title {
+  color: var(--main-background-color);
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 1.07;
+  /* or 107% */
+  text-align: center;
+  letter-spacing: 0.02em;
+  width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.hero-button {
+  background-color: var(--hover-focus-color);
+  color: var(--main-background-color);
+  font-family: inherit;
+  cursor: pointer;
+
+  display: inline-block;
+  border-radius: 4px;
+  min-width: 170px;
+  padding: 16px 32px;
+  border: 1px solid transparent;
+  margin-top: 48px;
+}
+
+.privilege {
+  background-color: var(--main-background-color);
+}
+.privilage-item{
+
+margin-left: 24px;
+
+width:calc((100% - 72px) / 4) ;
+
+
+}
+.privilage-item:first-child{
+  margin-left: 0px;
+}
+
+
+
+.privilege-title {
+  color: var(--header-color);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+
+  margin-bottom: 8px;
+}
+.privilege-text {
+  color: var(--main-text-color);
+}
+
+.work {
+  background-color: var(--main-background-color);
+  padding-top: 0px;
+}
+.work-list{
+display: flex;
+
+}
+
+.work-item +.work-item{
+
+margin-left: 24px; 
+}
+
+
+
+ 
+
+.section-title {
+  color: var(--header-color);
+  font-family: "Roboto";
+
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+
+.team {
+  background-color: var(--secondary-background-color);
+}
+
+.team-list{
+
+display: flex;
+}
+
+.team-name {
+  color: var(--header-color);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+
+.team-item {
+  background-color: var(--main-background-color);
+  text-align: center;
+}
+
+.team-item:not(:first-child){
+margin-left: 24px;
+}
+
+.card-content{
+padding-top: 32px;
+padding-bottom: 32px;
+}
+
+.footer {
+  background-color: var(--header-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.logo-title {
+  color: var(--secondary-background-color);
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.footer-text {
+  color: #e7e9fc;
+  margin-top: 16px;
+
+}
+
+/* Portfolio */
+.portfolio {
+  padding-top: 96px;
+}
+
+
+
+.main-portfolio {
+  background-color: var(--main-background-color);
+}
+
+.button-porfolio {
+  color: var(--hover-focus-color);
+  font-family: inherit;
+  background-color: var(--secondary-background-color);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+}
+
+
+
+/* Я так понял не будет работать, оставлю пока так  */
+.button-porfolio button:hover,
+.button-porfolio:focus {
+  background: var(--hover-focus-color);
+  color: var(--main-background-color);
+
+}
+.button-list {
+  display: flex;
+  justify-content: center;
+margin-bottom: 72px;
+ 
+
+}
+
+.button-item + .button-item {
+margin-left: 24px;
+
+}
+
+.project-list {
+display: flex;
+flex-wrap: wrap;
+column-gap: 24px;
+row-gap: 48px;
+}
+/* Примеры работ  */
+.project a {
+  text-decoration: none;
+}
+
+.pf-card{
+
+padding-bottom: 32px;
+padding-top: 32px;
+padding-left: 16px;
+}
+
+
+.project-item {
+
+
+  background-color: var(--main-background-color);
+  
+  border: 0.5px solid #f4f4fd;
+
+  width: calc((100% - 48px) / 3);
+
+}
+
+
+.project-title {
+  color: var(--header-color);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  
+}
+.project-text {
+  color: var(--main-text-color);
+
+}
+
+.footer-content{
+
+width: 264px;
+
+}
