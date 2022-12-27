@@ -86,7 +86,7 @@ font-style: normal;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.privilage-list{
+.privilege-list{
 display: flex;
 flex-basis: calc((100%-72)/4);
 
@@ -183,8 +183,11 @@ margin-left: 40px;
    min-width: 1440px; 
    height: 600px;
 
-
-   background-image: url(./images/hero-background.jpg);
+   background-image: linear-gradient(to bottom, 
+   rgba(46, 47, 66, 0.7),
+   rgba(46, 47, 66, 0.7)),
+   
+   url(./images/hero-background.jpg);
    background-repeat: no-repeat;
    background-size: cover;
 }
@@ -226,16 +229,58 @@ margin-left: 40px;
 .privilege {
   background-color: var(--main-background-color);
 }
-.privilage-item{
+.privilege-item{
 
+   display: flex;
+   flex-direction: column;
 margin-left: 24px;
 
 width:calc((100% - 72px) / 4) ;
 
 
 }
-.privilage-item:first-child{
+.privilege-item:first-child{
   margin-left: 0px;
+}
+
+.privilege-item:nth-child(1)::before{
+   content: "";
+      height: 112px;
+     
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      background-image: url(./icons/Icon\ 1.svg);
+}
+
+.privilege-item:nth-child(2)::before {
+   content: "";
+   height: 112px;
+   
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   background-image: url(./icons/Icon\ 2.svg);
+}
+
+.privilege-item:nth-child(3)::before {
+   content: "";
+   height: 112px;
+   
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   background-image: url(./icons/Icon\ 3.svg);
+}
+
+.privilege-item:nth-child(4)::before {
+   content: "";
+   height: 112px;
+ 
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   background-image: url(./icons/Icon\ 4.svg);
 }
 
 
@@ -247,6 +292,9 @@ width:calc((100% - 72px) / 4) ;
   line-height: 1.2;
 
   margin-bottom: 8px;
+  margin-top: 8px;
+
+
 }
 .privilege-text {
   color: var(--main-text-color);
@@ -300,6 +348,12 @@ display: flex;
   margin-bottom: 8px;
 }
 
+.team-text{
+
+margin-bottom: 8px;
+
+}
+
 
 .team-item {
   background-color: var(--main-background-color);
@@ -309,11 +363,66 @@ display: flex;
 .team-item:not(:first-child){
 margin-left: 24px;
 }
-
+ 
 .card-content{
+   display: flex;
+   flex-direction: column;
 padding-top: 32px;
 padding-bottom: 32px;
+
 }
+
+.icon-list{
+display: flex;
+}
+.icon-item:nth-child(1){
+margin-left: 16px;
+width: 40px;
+height: 40px;
+background-image: url(./icons/instagram\ 1.svg);
+background-repeat: no-repeat;
+}
+.icon-item:nth-child(2){
+margin-left: 24px;
+width: 40px;
+height: 40px;
+background-image: url(./icons/facebook.svg);
+background-repeat: no-repeat;
+}
+.icon-item:nth-child(3) {
+margin-left: 24px;
+   width: 40px;
+   height: 40px;
+   background-image: url(./icons/twitter.svg);
+   background-repeat: no-repeat;
+}
+.icon-item:nth-child(4) {
+margin-left: 24px;
+   width: 40px;
+   height: 40px;
+   background-image: url(./icons/workin.svg);
+   background-repeat: no-repeat;
+}
+/* .card-content::after {
+   content: "";
+   height: 40px;
+   width: 264px;
+   background-repeat: no-repeat;
+   background-image: 
+   url(./icons/instagram\ 1.svg), 
+   url(./icons/twitter.svg), 
+   url(./icons/facebook.svg),
+   url(./icons/workin.svg);
+
+   background-position: top 0px left 30px,
+                        top 0px left 90px,
+                        top 0px left 150px,
+                        top 0px left 210px;
+} */
+
+
+
+
 
 .footer {
   background-color: var(--header-color);
