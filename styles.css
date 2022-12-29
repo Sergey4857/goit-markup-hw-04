@@ -172,13 +172,15 @@ margin-left: 40px;
 
 .hero {
   
+   margin: auto;
   background-color: var(--header-color);
    display: block;
   text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
-   min-width: 1440px; 
+   max-width: 1440px; 
    height: 600px;
+  
 
    background-image: linear-gradient(to bottom, 
    rgba(46, 47, 66, 0.7),
@@ -222,6 +224,16 @@ margin-left: 40px;
   border: 1px solid transparent;
   margin-top: 48px;
 }
+
+.hero-button:hover,
+.hero-button:focus{
+background-color: #404BBF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
 
 .privilege {
   background-color: var(--main-background-color);
@@ -407,15 +419,32 @@ padding-bottom: 120px;
 }
 
 .customers-item {
-
+display: flex;
 width: 168px;
 height: 88px;
 border: 1px solid #8E8F99;
 border-radius: 4px;
 background-repeat: no-repeat;
+justify-content: center;
+align-items: center;
+}
+.customers-item:hover,
+.customers-item:focus
+{
+border: 1px solid #404BBF;
+}
+.icon-team{
+
+fill: #8E8F99;
+}
+.icon-team:hover,
+.icon-team:focus
+{
+fill: #404BBF;
+cursor: pointer;
+
 
 }
-
 .footer {
   background-color: var(--header-color);
   padding-top: 100px;
@@ -474,7 +503,10 @@ background-repeat: no-repeat;
    background-position: center;
    border-radius: 50%;
 }
-.icon-item-footer:hover{
+.icon-item-footer:hover,
+.icon-item-footer:focus
+
+{
 
 background-color: #31D0AA;
 
@@ -526,9 +558,19 @@ background-color: #31D0AA;
   display: flex;
   justify-content: center;
 margin-bottom: 72px;
- 
 
 }
+
+
+.button-item:hover,
+.button-item:focus
+{
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+0px 2px 1px rgba(0, 0, 0, 0.08),
+0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+
 
 .button-item + .button-item {
 margin-left: 24px;
@@ -562,9 +604,17 @@ padding-left: 16px;
    border: 1px solid #E7E9FC;
 
   width: calc((100% - 48px) / 3);
-   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+   
 
 }
+.project-item:hover{
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+
+}
+
+
+
+
 
 
 .project-title {
